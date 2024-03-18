@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AuthenticationModule } from './authentication/authentication.module';
  
 import { LoginComponent } from './authentication/login/login.component';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { LoginComponent } from './authentication/login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,AuthenticationModule
+    AppRoutingModule,AuthenticationModule,AdminModule
   ],
   exports: [
      
