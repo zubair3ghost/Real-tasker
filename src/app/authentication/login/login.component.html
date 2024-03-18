@@ -1,11 +1,30 @@
-      
-<form [formGroup]="loginForm" (ngSubmit)="userlogin()">
-    <input type="text" placeholder="enter your name" name="user" formControlName="user">
-    <br><br>
-    <span style="color: red; " *ngIf="user && user.invalid && user.touched"  > name is required</span>
-    <br>
-    <input type="password" placeholder="enter your password" name="password" formControlName="password">
-    <span style="color: red; " *ngIf="password &&password.invalid && password.touched"  > password is required</span>
-    <br>
-    <button type="submit">Submit</button>
-  </form>
+<div class="form-section">
+
+    <form [formGroup]="loginForm" class="form" (ngSubmit)="userlogin()">
+
+        <img src="assets/login/green-logo.svg" alt="">
+        <div class="input">
+            <label for="">USERNAME</label>
+            <input type="text" placeholder="Your USERNAME" name="user" formControlName="user">
+            <span style="color: red; " *ngIf="user && user.invalid && user.touched"> name is required</span>
+        </div>
+
+
+        <div class="input-field">
+        <div class="flex">
+            <label for="">PASSWORD</label>
+            <P>forget password?</P>
+        </div>
+        <div class="input-flex">
+
+
+            <input type="password" placeholder="PASSWORD" name="password" formControlName="password">
+            <img class="toggle" src="assets/login/active.svg" alt="">
+          
+            </div>
+            <span style="color: red; " *ngIf="password &&password.invalid && password.touched"> password is
+                required</span>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
