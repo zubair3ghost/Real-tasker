@@ -8,17 +8,18 @@
 
         <div class="flex">
             <img src="assets/sidebarimg/admin.svg" alt="">
-        <h4>Dashboard</h4>
+        
+        <h4  [routerLink]="['/sidebar', 'admin-page']"  >Dashboard</h4>
         </div>
         
         <div class="flex">
             <img src="assets/sidebarimg/Vector.svg" alt="">
-        <h4>Administration</h4>
+        <h4  >Administration</h4>
         </div>
         
         <div class="flex">
             <img src="assets/sidebarimg/tubelight.svg" alt="">
-        <h4>Buildings</h4>
+        <h4 [routerLink]="['/sidebar', 'header']">Buildings</h4>
         </div>
         
         <div class="flex">
@@ -49,7 +50,8 @@
         </div>
         <hr>
     </div>
-
+ 
+ <!-- <router-outlet></router-outlet> -->
 
 
 

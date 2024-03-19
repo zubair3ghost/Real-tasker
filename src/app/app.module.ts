@@ -7,6 +7,7 @@ import { AuthenticationModule } from './authentication/authentication.module';
  
 import { LoginComponent } from './authentication/login/login.component';
 import { AdminModule } from './admin/admin.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,10 @@ import { AdminModule } from './admin/admin.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,AuthenticationModule,AdminModule
+    AppRoutingModule,
+    AuthenticationModule,
+    AdminModule,
+    SharedModule
   ],
   exports: [
      

@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
 @NgModule({
   declarations: [
-    SidebarComponent
+    AdminPageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,  AppRoutingModule
   ],
-  exports: [SidebarComponent]
+  exports: [AdminPageComponent]
 })
 export class AdminModule { }
