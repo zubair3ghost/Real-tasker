@@ -4,6 +4,7 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { BuildingsComponent } from './buildings/buildings.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -14,7 +15,7 @@ import { ContactsComponent } from './contacts/contacts.component';
     ContactsComponent
   ],
   imports: [
-    CommonModule,  AppRoutingModule
+    CommonModule,  AppRoutingModule,ReactiveFormsModule
   ],
   exports: [AdminPageComponent]
 })

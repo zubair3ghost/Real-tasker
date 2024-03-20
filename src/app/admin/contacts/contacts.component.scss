@@ -1,0 +1,58 @@
+
+
+.parent-contact{
+  padding-right: 1rem;
+
+.contact{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 9px;
+    padding: 10px;
+    // this section is for headings
+    .heading{
+        display: flex;
+       align-items: center;
+       justify-content: space-between;
+       .left{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+       }
+    }
+      .form{
+
+    form{
+       display: flex;
+       align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        flex-wrap: wrap;
+       .input-flex{
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            border: 1px solid red ;
+            input{
+                width: 300px;
+                padding: 10px ;
+                border: 1px solid rgba(240, 241, 247, 1);
+               border-radius: 7px;
+            }
+            // this is for gender style 
+            
+        }
+        .gender{
+           .select{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+           }
+            
+        }
+    }
+
+      }
+
+
+ }
+}
