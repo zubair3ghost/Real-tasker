@@ -1,0 +1,80 @@
+
+
+.building{
+ 
+   .list-buildings{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 10px;
+      flex-wrap: wrap;
+    .first{
+        border: 1px solid rgb(159, 162, 180);
+        width: 252px;
+        border-radius: 12px;
+      
+    .heading{
+        p{
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            padding-block: 6px;
+        }
+
+        .imgs{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding-bottom: 5px;
+        }
+    }
+  .main-img{
+img{
+   width: 250px;
+
+}  }
+  .floor-management{
+    //here i deal with last part
+    padding: 1rem;
+    button{
+        background-color: rgba(54, 55, 64, 1);
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        width: 215px;
+    }
+    .button-imgs{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-block:7px ;
+
+    }
+    .supervisor{
+         img{
+
+         }
+         .name-number{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+       .num{
+        color: rgba(74, 196, 248, 1);
+       }
+       
+
+         }
+    }
+
+
+
+  }
+
+
+    }
+   }
+
+
+}

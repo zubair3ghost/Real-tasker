@@ -1,4 +1,4 @@
-<div class="sidebar">
+<div class="sidebar" >
 
 
     <img src="assets/sidebarimg/logo.svg" class="first-img" alt=" ">
@@ -6,10 +6,10 @@
     <div class="box">
 
 
-        <div class="flex">
+        <div   [routerLink]="['/']"  class="flex">
             <img src="assets/sidebarimg/admin.svg" alt="">
         
-        <h4  [routerLink]="['/sidebar', 'admin-page']"  >Dashboard</h4>
+        <h4  >Dashboard</h4>
         </div>
         
         <div class="flex">
@@ -17,9 +17,9 @@
         <h4  >Administration</h4>
         </div>
         
-        <div class="flex">
+        <div  [routerLink]="['/', 'buildings']" class="flex">
             <img src="assets/sidebarimg/tubelight.svg" alt="">
-        <h4 [routerLink]="['/sidebar', 'header']">Buildings</h4>
+        <h4 >Buildings</h4>
         </div>
         
         <div class="flex">

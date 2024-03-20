@@ -1,18 +1,122 @@
  .admin{
-     border: 1px solid gray;
+     border: 1px solid rgba(223, 224, 235, 1);
+     border-radius: 8px;
      margin-block:2rem ;
      margin-right: 1rem;
-
+     background-color: #ffffff;
+    //  height: 100%;
+    
      .button-search{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 1rem;
-
+     .left{
+        button{
+            background-color: #29CC97;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 4px 24px;
+            border-radius: 15px;
+            cursor: pointer;
+                   
+        }
+     }
         .right{
             display: flex;
             align-items: center;
             justify-content: space-around;
+            gap: 10px;
+
+            .buttons{
+            ul{
+                  display: flex;
+                li{
+                    padding-inline:1rem ;
+                  .pdf{
+                    color: red;
+                    border: 1px solid red;
+                    border-radius: 15px;
+                    padding: 2px 26px;
+                    background: white;
+            cursor: pointer;
+
+                  }
+                  .excel{
+                    color: #29CC97;
+                    border: 1px solid #29CC97;
+                    border-radius: 15px;
+                    padding: 2px 26px;
+                    background: white;
+            cursor: pointer;
+
+                  }
+                  .print{
+                    color: #04C6F0;
+                    border: 1px solid #04C6F0;
+                    border-radius: 15px;
+                    padding: 2px 26px;
+                    background: white;
+            cursor: pointer;
+
+                  }
+                }
+            }
+
+            }
+            .search{
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                padding-block: 5px;
+
+                input{
+                    outline: none;
+                    border: none;
+                }
+                img{
+
+                }
+            }
         }
      }
+
+     .table{
+        padding-top: 2rem;
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border-left:none ;
+            border-right: none;
+            tr{
+                
+                th{
+                    border-bottom: 2px solid rgb(223, 224, 235);
+                    text-align: start;
+                    padding-left: 15px;
+                    color:  rgba(159, 162, 180, 1);
+                    ;
+                    font-family: "poppins";
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+                td{
+                    padding: 15px;
+                    font-size: 13px;
+                    border-bottom: 2px solid  rgba(223, 224, 235, 1);
+                    padding-left: 15px;
+                   
+                }
+            }
+        }
+     }
+  
+      
+      
+   
+
+      
+      
+      
  }

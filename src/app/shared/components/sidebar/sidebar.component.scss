@@ -1,35 +1,114 @@
 
 
-.sidebar{
+// .sidebar{
+//     width: 250px;
+//     background-color: #363740;
+//     color: white;
+//     height: 100vh;
+//     padding: 2rem 1rem;
+//     // position: fixed;
+//     // top: 0;
+    
+//     .first-img{
+//         padding-bottom: 2rem;
+//     }
+//     .box{
+
+//         .flex{
+//             display: flex;
+//             align-items: center;
+//             gap: 10px;
+//             padding-block: 1rem;
+//             h4{
+//                 color: lightgray;
+//             }
+//             &:hover{
+//                 color: white;
+                
+//             }
+//         }
+//     }
+//     hr{
+//         color: white;
+//     }
+
+
+
+
+// }
+.sidebar {
     width: 250px;
     background-color: #363740;
     color: white;
-    height: 100vh;
+    height: 100%;
     padding: 2rem 1rem;
-    .first-img{
-        padding-bottom: 2rem;
+  
+    .first-img { 
     }
-    .box{
-
-        .flex{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding-block: 1rem;
-            h4{
-                color: lightgray;
-            }
-            &:hover{
-                color: white;
-                
-            }
+  
+    .box {
+    
+      .flex {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-block: 1rem;
+        cursor: pointer;
+        &:hover{
+          background-color: #3E4049;
+          // background-color: rgba(159, 162, 180, 1);
+          color: white;
         }
+  
+        h4 {
+          color: lightgray;
+        }
+  
+        &:hover {
+          color: white;
+        }
+      }
     }
-    hr{
-        color: white;
+  
+    hr {
+      color: white;
     }
-
-
-
-
-}
+  }
+  
+  
+  
+// .sidebar {
+//     position: fixed;
+//     top: 0; /* Stick to the top */
+//     left: 0;
+//     width: 200px;
+//     background-color: #363740;
+//     color: white;
+//     height: 100vh;
+//     padding: 2rem 1rem;
+//     overflow-y: hidden; /* Allow scrolling if content exceeds the height */
+    
+//     .first-img {
+//       padding-bottom: 2rem;
+//     }
+  
+//     .box {
+//       .flex {
+//         display: flex;
+//         align-items: center;
+//         gap: 10px;
+//         padding-block: 1rem;
+//         h4 {
+//           color: lightgray;
+//         }
+//         &:hover {
+//           color: white;
+//         }
+//       }
+//     }
+  
+//     hr {
+//       color: white;
+//     }
+//   }
+  

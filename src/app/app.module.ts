@@ -8,10 +8,12 @@ import { AuthenticationModule } from './authentication/authentication.module';
 import { LoginComponent } from './authentication/login/login.component';
 import { AdminModule } from './admin/admin.module';
 import { SharedModule } from './shared/shared.module';
+ 
 
 @NgModule({
   declarations: [
     AppComponent,
+ 
  
   ],
   imports: [

@@ -4,6 +4,8 @@ import { LoginComponent } from './authentication/login/login.component';
 import { AdminPageComponent } from './admin/admin-page/admin-page.component';
 import { DashboardLayoutComponent } from './shared/components/layouts/dashboard-layout/dashboard-layout.component';
 import { HeaderComponent } from './shared/components/layouts/header/header.component';
+import { BuildingsComponent } from './admin/buildings/buildings.component';
+import { ContactsComponent } from './admin/contacts/contacts.component';
  
 
 const routes: Routes = [
@@ -11,15 +13,27 @@ const routes: Routes = [
     path:'login',component: LoginComponent
   } ,
   {
-    path:'sidebar',
+    path:'',
     component: DashboardLayoutComponent,
     children:[
       {
-        path:'admin-page',
-        component: AdminPageComponent
-      },{
+        path:'',
+        component: AdminPageComponent,
+       
+      },
+      {
         path:'header',
-        component: HeaderComponent
+        component: HeaderComponent,
+       
+      },
+      {
+        path:'buildings',
+        component: BuildingsComponent,
+        
+      },
+      {
+        path:'contact',
+         component:ContactsComponent
       }
     ]
   },

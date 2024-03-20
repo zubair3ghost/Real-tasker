@@ -1,0 +1,28 @@
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2{
+        text-decoration: underline;
+        font-weight: 600;
+        font-family: "poppins";
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-block: 2rem;
+        padding-right:1rem ;
+        h3{
+            font-size: 15px;
+            border-left: 1px solid gray;
+            padding-left: 10px;
+            text-decoration: underline;
+        }
+
+    }
+}

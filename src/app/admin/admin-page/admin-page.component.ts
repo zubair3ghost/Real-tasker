@@ -11,5 +11,25 @@ export class AdminPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  array: any[] =[
+    {img:"../../../assets/dash/one.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+    {img:"../../../assets/dash/two.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+    {img:"../../../assets/dash/three.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+    {img:"../../../assets/dash/four.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+    {img:"../../../assets/dash/five.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+   
+    {img:"../../../assets/dash/one.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+    {img:"../../../assets/dash/two.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+    {img:"../../../assets/dash/three.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+    {img:"../../../assets/dash/four.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+    {img:"../../../assets/dash/five.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+   
+    {img:"../../../assets/dash/one.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+    {img:"../../../assets/dash/two.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+    {img:"../../../assets/dash/three.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+    {img:"../../../assets/dash/four.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+    {img:"../../../assets/dash/five.svg", name: "admin",email:"wakoman@gmail.com",   phone:"042-6664772",active:"../../../assets/dash/correct.svg", action:"../../../assets/dash/chain.svg"},
+   
+  ]
 
 }
