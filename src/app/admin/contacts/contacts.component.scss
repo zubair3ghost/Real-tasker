@@ -4,10 +4,11 @@
   padding-right: 1rem;
 
 .contact{
+  padding: 2rem;
     background-color: white;
     border: 1px solid gray;
     border-radius: 9px;
-    padding: 10px;
+     
     // this section is for headings
     .heading{
         display: flex;
@@ -20,35 +21,73 @@
        }
     }
       .form{
-
+    padding: 2rem;
     form{
        display: flex;
        align-items: center;
-        justify-content: space-around;
-        gap: 10px;
+        // justify-content: space-between;
+        gap: 30px;
         flex-wrap: wrap;
        .input-flex{
             display: flex;
+            gap: 10px;
             flex-direction: column;
             width: 350px;
-            border: 1px solid red ;
+            // border: 1px solid red ;
+            label{
+             color:rgba(159, 162, 180, 1);
+            }
             input{
-                width: 300px;
+                width: 350px;
                 padding: 10px ;
+                color:rgba(159, 162, 180, 1);
                 border: 1px solid rgba(240, 241, 247, 1);
                border-radius: 7px;
+               outline: none;
             }
             // this is for gender style 
             
         }
         .gender{
+          
+          width: 350px;
            .select{
             display: flex;
             align-items: center;
-            gap: 5px;
+            
+            gap: 10px;
+            .flex-gender{
+               display: flex;
+               align-items: center;
+               justify-content: space-around;
+               gap: 5px;
+            }
            }
             
         }
+    }
+    .buttons{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 10px;
+      padding-block: 2rem;
+      .submit{
+        padding: 10px 30px;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        background-color: rgb(41, 204, 151);
+      }
+      .reset{
+        padding: 10px 30px;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        background-color: red;
+      }
     }
 
       }
