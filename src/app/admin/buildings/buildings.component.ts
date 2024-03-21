@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UtillService } from 'src/app/utility/utill.service';
 
 @Component({
   selector: 'app-buildings',
@@ -8,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class BuildingsComponent implements OnInit {
 imagePath: any="../../../assets/building/rebuild.svg "
 ;
+title = 'data'; // Corrected variable name and data structure
 
-  constructor() { }
+constructor(private utility: UtillService) {
+  this.utility.setData({ title: this.title }); // Sending data as an object with title property
+}
 
   ngOnInit(): void {
   }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+import { UtillService } from 'src/app/utility/utill.service';
 
 @Component({
   selector: 'app-contacts',
@@ -7,8 +9,14 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit {
+titile:any=""
+  constructor(private activeRoute:ActivatedRoute, private utility:UtillService) {
 
-  constructor() { }
+    this.activeRoute.data.subscribe((res:any)=>{
+    this.titile=res.title
+    })
+    this.utility.setData(this.titile)
+   }
 
   ngOnInit(): void {
   }

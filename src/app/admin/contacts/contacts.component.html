@@ -1,75 +1,73 @@
- 
-
-
-
-
 <div class="parent-contact">
-       <div class="contact">
+    <div class="contact">
 
         <div class="heading">
-            <h1>Add Contacts</h1> 
-        <div class="left">
-            <img src="assets/contacts/arrow.svg" alt="">
-            <h4>Back</h4>
+            <h1>Add Contacts</h1>
+            <div class="left">
+                <img src="assets/contacts/arrow.svg" alt="">
+                <h4>Back</h4>
 
-        </div>
+            </div>
         </div>
 
 
         <div class="form">
 
 
-            <form [formGroup]="contactform "  (ngSubmit)="formsubmit(contactform.value)" >
-            <div class="input-flex">
-                <label for="">First Name</label>
-                <input type="text" placeholder="Enter your name" formControlName="firstname">
-            </div>
-            <div class="input-flex">
-                <label for="">Last Name</label>
-                <input type="text" placeholder="Your Last Name" formControlName="lastname">
-            </div>
-            <div class="input-flex">
-                <label for="">Email</label>
-                <input type="text" placeholder="Enter your Email" formControlName="email">
-            </div>
-            <div class="gender">
-                <label for="">Gender</label>
-                
-                <div class="select">
-                    <div class="flex-gender">
-                    
-                        <label for=""> Male</label>
-                        <input type="radio" formControlName="gender">
-                      </div>
-                      <div class="flex-gender">
-                        <label for="">Female </label>
-                        <input type="radio">
-                      </div>  
+            <form [formGroup]="contactform " (ngSubmit)="formsubmit(contactform.value)">
+                <div class="form-inputs">
+                    <div class="input-flex">
+                        <label for="">First Name</label>
+                        <input type="text" placeholder="Enter your name" formControlName="firstname">
+                    </div>
+                    <div class="input-flex">
+                        <label for="">Last Name</label>
+                        <input type="text" placeholder="Your Last Name" formControlName="lastname">
+                    </div>
+                    <div class="input-flex">
+                        <label for="">Email</label>
+                        <input type="text" placeholder="Enter your Email" formControlName="email">
+                    </div>
+                    <div class="gender">
+                        <label for="">Gender</label>
+
+                        <div class="select">
+                            <div class="flex-gender">
+
+                                <label for=""> Male</label>
+                                <input type="radio" formControlName="gender">
+                            </div>
+                            <div class="flex-gender">
+                                <label for="">Female </label>
+                                <input type="radio">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="input-flex">
+                        <label for="">Mobile Number</label>
+                        <input type="number" placeholder="Enter your Number" formControlName="number">
+                    </div>
+
+                    <div class="input-flex">
+                        <label for="">Date Of Birth</label>
+                        <input type="date" placeholder="Enter your date" formControlName="date">
+                    </div>
+
+                    <div class="input-flex">
+                        <label for="">Choose a Pic</label>
+                        <input type="text" placeholder="choose a file" formControlName="pic">
+                    </div>
                 </div>
-                
-           
-            </div>
-            <div class="input-flex">
-                <label for="">Mobile Number</label>
-                <input type="number" placeholder="Enter your Number" formControlName="number">
-            </div>
-        
-            <div class="input-flex">
-                <label for="">Date Of Birth</label>
-                <input type="date" placeholder="Enter your date" formControlName="date">
-            </div>
-          
-            <div class="input-flex">
-                <label for="">Choose a Pic</label>
-                <input type="text" placeholder="choose a file" formControlName="pic">
-            </div>
-           
+                <div class="buttons">
+                    <button class="submit"> submit</button>
+                    <button class="reset"> Reset</button>
+                </div>
 
             </form>
-            <div class="buttons">
-                <button class="submit"> submit</button>
-                <button  class="reset">  Reset</button>
-             </div>
+
         </div>
-       </div>
+
     </div>
+</div>

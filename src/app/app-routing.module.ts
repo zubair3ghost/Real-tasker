@@ -19,6 +19,7 @@ const routes: Routes = [
       {
         path:'',
         component: AdminPageComponent,
+        data: { title: 'Admin Managemen' }
        
       },
       {
@@ -29,11 +30,12 @@ const routes: Routes = [
       {
         path:'buildings',
         component: BuildingsComponent,
-        
+        data: { title: 'buildings' }//this is for building
       },
       {
         path:'contact',
-         component:ContactsComponent
+         component:ContactsComponent,
+         data: { title: 'Contact Us' }
       }
     ]
   },

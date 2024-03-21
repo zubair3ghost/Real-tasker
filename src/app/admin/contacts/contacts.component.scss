@@ -1,97 +1,125 @@
-
-
-.parent-contact{
+.parent-contact {
   padding-right: 1rem;
 
-.contact{
-  padding: 2rem;
+  .contact {
+    padding: 2rem;
     background-color: white;
-    border: 1px solid gray;
+    border: 1px solid rgba(223, 224, 235, 1);
     border-radius: 9px;
-     
+    h1{
+      font-size: 24px;
+      font-weight: 400;
+    }
+
     // this section is for headings
-    .heading{
-        display: flex;
-       align-items: center;
-       justify-content: space-between;
-       .left{
+    .heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .left {
         display: flex;
         align-items: center;
         justify-content: space-around;
-       }
+      }
     }
-      .form{
-    padding: 2rem;
-    form{
-       display: flex;
-       align-items: center;
-        // justify-content: space-between;
-        gap: 30px;
-        flex-wrap: wrap;
-       .input-flex{
+
+    .form {
+      padding: 2rem;
+      @media(max-width:730px){
+       padding: 10px;
+      }
+
+      form {
+
+        .form-inputs {
+          display: flex;
+          align-items: center;
+          // justify-content: space-between;
+          gap: 30px;
+          flex-wrap: wrap;
+
+          .input-flex {
             display: flex;
             gap: 10px;
             flex-direction: column;
-            width: 350px;
+            @media(max-width:730px){
+              width: 100%;
+            }
+
             // border: 1px solid red ;
-            label{
-             color:rgba(159, 162, 180, 1);
+            label {
+              color: rgba(159, 162, 180, 1);
             }
-            input{
-                width: 350px;
-                padding: 10px ;
-                color:rgba(159, 162, 180, 1);
-                border: 1px solid rgba(240, 241, 247, 1);
-               border-radius: 7px;
-               outline: none;
+
+            input {
+              width: 350px;
+              padding: 10px;
+              color: rgba(159, 162, 180, 1);
+              border: 1px solid rgba(240, 241, 247, 1);
+              border-radius: 7px;
+              outline: none;
+              @media(max-width:730px){
+                width: 100%;
+              }
             }
+
             // this is for gender style 
-            
-        }
-        .gender{
-          
-          width: 350px;
-           .select{
-            display: flex;
-            align-items: center;
-            
-            gap: 10px;
-            .flex-gender{
-               display: flex;
-               align-items: center;
-               justify-content: space-around;
-               gap: 5px;
+
+          }
+
+          .gender {
+
+            width: 350px;
+
+            .select {
+              display: flex;
+              align-items: center;
+
+              gap: 10px;
+
+              .flex-gender {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 5px;
+              }
             }
-           }
-            
+
+          }
         }
+
+        .buttons {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          gap: 10px;
+          padding-block: 2rem;
+
+          .submit {
+            padding: 10px 30px;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            background-color: rgb(41, 204, 151);
+          }
+
+          .reset {
+            padding: 10px 30px;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            background-color: red;
+          }
+        }
+
+      }
+
+
     }
-    .buttons{
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      gap: 10px;
-      padding-block: 2rem;
-      .submit{
-        padding: 10px 30px;
-        color: white;
-        border: none;
-        border-radius: 20px;
-        outline: none;
-        background-color: rgb(41, 204, 151);
-      }
-      .reset{
-        padding: 10px 30px;
-        color: white;
-        border: none;
-        border-radius: 20px;
-        outline: none;
-        background-color: red;
-      }
-    }
-
-      }
 
 
- }
+  }
 }

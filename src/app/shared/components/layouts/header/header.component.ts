@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, RoutesRecognized } from '@angular/router';
+import { UtillService } from 'src/app/utility/utill.service';
 
 @Component({
   selector: 'app-header',
@@ -8,15 +9,16 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute){ }
+  @Input() title:string='Real Tasker'
+ 
+  constructor(private route: ActivatedRoute, private utility:UtillService, private router: Router) {
+    //  this.utility.data$.subscribe(data => {this.title=data.title}) 
+  }
 
+  
   ngOnInit(): void {
-    const data = this.route.snapshot.data;
-    // console.log(data); 
-    // abhi k liye baki styling kr   lo baad mai ajao ga
+
      
-    console.log("heere is the message from the app routing se converter");
-    
   }
 
 }
