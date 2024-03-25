@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ActivationStart, Router, RoutesRecognized } from '@angular/router';
+import { ActivatedRoute, ActivationStart, NavigationEnd, Router, RoutesRecognized } from '@angular/router';
+import { filter } from 'rxjs';
 import { UtillService } from 'src/app/utility/utill.service';
 
 @Component({
@@ -9,27 +10,25 @@ import { UtillService } from 'src/app/utility/utill.service';
 })
 export class DashboardLayoutComponent implements OnInit {
   title = ''; // Corrected variable name and data structure
+  showHeader: boolean=true;
 
-  constructor(private utility: UtillService, private router: Router) {
+  constructor(private utility: UtillService, 
+    private router: Router,
+     private activatedRoute: ActivatedRoute
+    ) {
     // this.utility.setData({ title: this.title }); // Sending data as an object with title property
   }
-
   ngOnInit(): void {
-    this.router.events.subscribe((data) => {
-      window.scrollTo(0, 0)
-      // console.log(data);
-      if (data instanceof ActivationStart) {
-        const obj: any = data.snapshot.data;
-        this.title=obj.title;
-        // if (Object.keys(obthj).length !== 0) {
-        console.log( this.title);
-        //   // this.routeData = obj;
-        // } else {
-        //   // this.routeData = showIncludes.showSharedComps;
-        // }
-        // this.cdr.detectChanges();
-      }
+    console.log("thsis is home condloke");
+    
+    
+
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      // Accessing the data property directly to check if showHeader is set
+      this.showHeader = !this.activatedRoute.firstChild?.snapshot.data['showHeader'];
     });
-  }
+  } 
 
 }

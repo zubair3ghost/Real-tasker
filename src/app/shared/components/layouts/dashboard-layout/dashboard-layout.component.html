@@ -4,13 +4,18 @@
 
 <div class="dashboard-layout-main">
     <div class="sidebar-section">
-        <app-sidebar></app-sidebar>
+        <app-sidebar *ngIf="showHeader" ></app-sidebar>
     </div>
-     
-    <div class="router-outlet">
-        <app-header [title]="title"></app-header>
-        <router-outlet></router-outlet>
+
+    <div class="content-parent">
+        <div class="header-section">
+            <app-header [title]="title"  *ngIf="showHeader"></app-header>
+        </div>
+        <div class="router-outlet">
+            <router-outlet></router-outlet>
+        </div>
     </div>
+    
 </div>
 
 

@@ -1,59 +1,74 @@
-<div class="sidebar" >
+<div class="main-sidebar">
 
-
-    <img src="assets/sidebarimg/logo.svg" class="first-img" alt=" ">
-
-    <div class="box">
-
-
-        <div   [routerLink]="['/']"  class="flex">
-            <img src="assets/sidebarimg/admin.svg" alt="">
-        
-        <h4  >Dashboard</h4>
-        </div>
-        
-        <div class="flex">
-            <img src="assets/sidebarimg/Vector.svg" alt="">
-        <h4  >Administration</h4>
-        </div>
-        
-        <div  [routerLink]="['/', 'buildings']" class="flex">
-            <img src="assets/sidebarimg/tubelight.svg" alt="">
-        <h4 >Buildings</h4>
-        </div>
-        
-        <div class="flex">
-            <img src="assets/sidebarimg/report.svg" alt="">
-        <h4>Supervisors</h4>
-        </div>
-        <div    [routerLink]="['/', 'contact']"  class="flex">
-            <img src="assets/sidebarimg/Vector.svg" alt="">
-        <h4>Contacts</h4>
-        </div>
-        <div class="flex">
-            <img src="assets/sidebarimg/report.svg" alt="">
-        <h4>Tenants</h4>
-        </div>
-        <div class="flex">
-            <img src="assets/sidebarimg/Vector.svg" alt="">
-        <h4>Directory</h4>
-        </div>
-        <div class="flex">
-            <img src="assets/sidebarimg/tubelight.svg" alt="">
-        <h4>Service Category</h4>
-        </div>
-
-        <br>
-        <div class="flex">
-            <img src="assets/sidebarimg/report.svg" alt="">
-        <h4>report</h4>
-        </div>
-        <hr>
+    <!-- this is for toggle -->
+    <div class="icon">
+        <i class="fa-solid fa-bars" *ngIf="burger" (click)="toggle()"></i>
+        <!-- <i class="fa-solid fa-xmark" *ngIf="!burger" (click)="toggle()"></i> -->
     </div>
- 
- <!-- <router-outlet></router-outlet> -->
+
+
+
+    <div class="sidebar" [class.show]="show">
+
+        <div class="icons" *ngIf="show" style="display: flex;align-items: start;justify-content: end;">
+            <i class="fa-solid fa-xmark fa-2x" (click)="toggle()"></i>
+
+        </div>
+
+        <img src="assets/sidebarimg/logo.svg" class="first-img" alt=" ">
+
+        <div class="box">
+
+
+            <div [routerLink]="['/']" class="flex">
+                <img src="assets/sidebarimg/admin.svg" alt="">
+
+                <h4>Dashboard</h4>
+            </div>
+
+            <div class="flex">
+                <img src="assets/sidebarimg/Vector.svg" alt="">
+                <h4>Administration</h4>
+            </div>
+
+            <div [routerLink]="['/', 'buildings']" class="flex">
+                <img src="assets/sidebarimg/tubelight.svg" alt="">
+                <h4>Buildings</h4>
+            </div>
+
+            <div class="flex">
+                <img src="assets/sidebarimg/report.svg" alt="">
+                <h4>Supervisors</h4>
+            </div>
+            <div [routerLink]="['/', 'contact']" class="flex">
+                <img src="assets/sidebarimg/Vector.svg" alt="">
+                <h4>Contacts</h4>
+            </div>
+            <div class="flex">
+                <img src="assets/sidebarimg/report.svg" alt="">
+                <h4>Tenants</h4>
+            </div>
+            <div class="flex">
+                <img src="assets/sidebarimg/Vector.svg" alt="">
+                <h4>Directory</h4>
+            </div>
+            <div class="flex">
+                <img src="assets/sidebarimg/tubelight.svg" alt="">
+                <h4 routerLink="/login">login</h4>
+            </div>
+
+            <br>
+            <div class="flex">
+                <img src="assets/sidebarimg/report.svg" alt="">
+                <h4>report</h4>
+            </div>
+            <hr>
+        </div>
+
+        <!-- <router-outlet></router-outlet> -->
 
 
 
 
+    </div>
 </div>

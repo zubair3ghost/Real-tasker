@@ -16,6 +16,7 @@ import { HeaderComponent } from './components/layouts/header/header.component';
         RouterModule
     ],
     exports:[
+        HeaderComponent,
         SidebarComponent,
         DashboardLayoutComponent
     ]

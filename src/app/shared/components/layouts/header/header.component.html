@@ -2,7 +2,7 @@
 
  <!-- this is for only admin panel header -->
 
-   <div class="header">
+   <div class="header" [class.fixed]="fixed">
     <!-- if title hai to title show hoo werna default show hoo  -->
     <h2>{{ title ? title : 'Admin Management' }}</h2>
 
@@ -13,3 +13,4 @@
 
    </div>
    </div>
+ 

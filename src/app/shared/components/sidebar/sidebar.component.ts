@@ -1,5 +1,5 @@
-import { Component, OnInit,ElementRef, HostListener, Renderer2 } from '@angular/core';
- 
+import { Component, OnInit, ElementRef, HostListener, Renderer2 } from '@angular/core';
+
 
 
 @Component({
@@ -10,20 +10,27 @@ import { Component, OnInit,ElementRef, HostListener, Renderer2 } from '@angular/
 export class SidebarComponent implements OnInit {
 
   constructor(
-    private renderer: Renderer2, 
+    private renderer: Renderer2,
     private elementRef: ElementRef) { }
 
   ngOnInit(): void {
   }
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const sidebar = this.elementRef.nativeElement.querySelector('.sidebar');
-
-    if (window.pageYOffset > 100) {
-      sidebar.classList.add('fixed-sidebar');
-    } else {
-      sidebar.classList.remove('fixed-sidebar');
-    }
+  burger: boolean = true
+  cross:boolean=false
+  show:boolean = false
+  toggle() {
+     this.burger=!this.burger
+     this.show=!this.show
+     
   }
+
+
+
+
+
+
+
+
+  
 
 }

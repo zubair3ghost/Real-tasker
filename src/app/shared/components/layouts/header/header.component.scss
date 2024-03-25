@@ -4,12 +4,32 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &.fixed {
+        position: fixed; /* Make the navbar fixed at the top */
+        top: 0; 
+        width: 100%; 
+       
+        @media(max-width:1200px){
+            width: 73%;     
+        }
+        @media(max-width:850px){
+            width: 95%;     
+        }
+        z-index: 1000; 
+        background-color: white;
+      }
+      
+
 
     h2{
         text-decoration: underline;
         font-weight: 600;
+
         font-family: "poppins";
-    }
+        @media(max-width:767px){
+         padding-left: 10px;
+          font-size: 15px; }    
+           }
     .left{
         display: flex;
         align-items: center;
@@ -25,4 +45,6 @@
         }
 
     }
+
+
 }

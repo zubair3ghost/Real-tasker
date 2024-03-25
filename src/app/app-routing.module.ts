@@ -6,6 +6,7 @@ import { DashboardLayoutComponent } from './shared/components/layouts/dashboard-
 import { HeaderComponent } from './shared/components/layouts/header/header.component';
 import { BuildingsComponent } from './admin/buildings/buildings.component';
 import { ContactsComponent } from './admin/contacts/contacts.component';
+import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
  
 
 const routes: Routes = [
@@ -13,8 +14,12 @@ const routes: Routes = [
     path:'login',component: LoginComponent
   } ,
   {
+    path:'sidebar',component: SidebarComponent, data: { showHeader: true }
+  } ,
+  {
     path:'',
     component: DashboardLayoutComponent,
+ 
     children:[
       {
         path:'',
@@ -25,6 +30,8 @@ const routes: Routes = [
       {
         path:'header',
         component: HeaderComponent,
+      // this is for header hide for login
+        data: { showHeader: true }
        
       },
       {
